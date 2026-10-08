@@ -319,8 +319,10 @@
         pts.push({
           x: Math.random() * W,
           y: Math.random() * H,
-          vx: (Math.random() - .5) * .22,
-          vy: (Math.random() - .5) * .22,
+          vx: 0,
+          vy: 0,
+          a: Math.random() * Math.PI * 2,
+          sp: .18 + Math.random() * .32,
           r: Math.random() * 1.4 + .5,
           tw: Math.random() * Math.PI * 2
         });
@@ -341,6 +343,10 @@
             p.y += dy / d * f;
           }
         }
+        p.a += (Math.random() - .5) * .03;
+        var k = reduced ? .35 : 1;
+        p.vx += (Math.cos(p.a) * p.sp * k - p.vx) * .05;
+        p.vy += (Math.sin(p.a) * p.sp * k - p.vy) * .05;
         p.x += p.vx;
         p.y += p.vy;
         p.tw += .02;
@@ -396,7 +402,7 @@
       raf = requestAnimationFrame(loop);
     }
     function setRunning() {
-      var should = visible && !document.hidden && !reduced;
+      var should = visible && !document.hidden;
       if (should && !running) {
         running = true;
         raf = requestAnimationFrame(loop);
