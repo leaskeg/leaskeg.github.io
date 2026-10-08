@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Jens Gudmand Bach</title>
+  <meta name="description" content="This page doesn't exist. Head back to Jens Gudmand Bach's portfolio.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#070b18">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070b18; --text: #eef2fa; --text-2: #b9c5de; --line: rgba(140,165,220,.28);
+      --a1: #2ee6c5; --a2: #3d7bff; --a3: #a78bfa;
+      --grad: linear-gradient(110deg, var(--a1), var(--a2) 52%, var(--a3));
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; display: grid; place-items: center; padding: 24px 16px; overflow: hidden;
+      background: var(--bg); color: var(--text); font-family: "Inter", "Segoe UI", system-ui, sans-serif; line-height: 1.6;
+    }
+    .aurora { position: fixed; inset: -20%; z-index: -1; opacity: .55; pointer-events: none; }
+    .aurora span { position: absolute; border-radius: 50%; filter: blur(90px); }
+    .aurora span:nth-child(1) { width: 55vw; height: 45vw; left: 45%; top: 5%; background: radial-gradient(closest-side, var(--a1), transparent); animation: d1 24s ease-in-out infinite alternate; }
+    .aurora span:nth-child(2) { width: 50vw; height: 40vw; left: 10%; top: 45%; background: radial-gradient(closest-side, var(--a3), transparent); animation: d2 30s ease-in-out infinite alternate; }
+    .aurora span:nth-child(3) { width: 45vw; height: 38vw; left: 60%; top: 55%; background: radial-gradient(closest-side, var(--a2), transparent); animation: d1 34s ease-in-out infinite alternate-reverse; }
+    @keyframes d1 { to { transform: translate(-14vw, 10vh) scale(1.15); } }
+    @keyframes d2 { to { transform: translate(16vw, -12vh) scale(.9); } }
+    main { text-align: center; max-width: 560px; }
+    .code {
+      font-family: "Space Grotesk", sans-serif; font-weight: 700; line-height: .9; letter-spacing: -.06em;
+      font-size: clamp(6rem, 30vw, 13rem); margin: 0;
+      background: var(--grad); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+      animation: shimmer 8s linear infinite;
+    }
+    @keyframes shimmer { to { background-position: -200% 0; } }
+    .label { font-family: "JetBrains Mono", monospace; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--a1); margin: 18px 0 0; }
+    h1 { font-family: "Space Grotesk", sans-serif; font-weight: 600; font-size: clamp(1.5rem, 5vw, 2.1rem); letter-spacing: -.03em; line-height: 1.2; margin: 10px 0 0; }
+    p { color: var(--text-2); margin: 12px 0 0; }
+    a.btn {
+      display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; min-height: 50px; padding: 0 24px; border-radius: 12px;
+      font-weight: 600; text-decoration: none; color: #050914; background: var(--grad);
+      box-shadow: 0 14px 40px -14px var(--a2); transition: transform .3s cubic-bezier(.2,.8,.2,1);
+    }
+    a.btn:hover { transform: translateY(-2px); }
+    a.btn:focus-visible { outline: 2px solid var(--a1); outline-offset: 3px; }
+    a.btn svg { width: 18px; height: 18px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <main>
+    <p class="code" aria-hidden="true">404</p>
+    <p class="label">Page not found</p>
+    <h1>This page drifted off into the northern lights.</h1>
+    <p>The link may be old, or the address mistyped. Everything worth seeing is on the front page.</p>
+    <a class="btn" href="/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      Back to the portfolio
+    </a>
+  </main>
+</body>
+</html>
