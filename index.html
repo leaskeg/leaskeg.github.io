@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://leaskeg.github.io/">
   <meta property="og:title" content="Jens Gudmand Bach | Full-stack developer">
-  <meta property="og:description" content="Android apps on Google Play, web games, Discord bots and computer-vision tools. 17 projects in the last 6 months.">
+  <meta property="og:description" content="Android apps on Google Play, web games, Discord bots and computer-vision tools. 14 projects in the last 6 months, 4 apps on Google Play.">
   <meta property="og:image" content="https://leaskeg.github.io/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -170,11 +170,11 @@
       <dl class="stats__grid" data-reveal-group>
         <div class="stat" data-reveal>
           <dt>Projects shipped or in active development in the last 6&nbsp;months</dt>
-          <dd><span class="stat__num" data-count="17">17</span></dd>
+          <dd><span class="stat__num" data-count="14">14</span></dd>
         </div>
         <div class="stat" data-reveal>
-          <dt>Apps &amp; sites live in production: Numa, Aquarium Tracker, Flunker&nbsp;Hunt</dt>
-          <dd><span class="stat__num" data-count="3">3</span></dd>
+          <dt>Apps &amp; sites live: 4 apps on Google&nbsp;Play, flunkhunt.se and lindangen.nu</dt>
+          <dd><span class="stat__num" data-count="6">6</span></dd>
         </div>
         <div class="stat" data-reveal>
           <dt>Languages in use: Kotlin, Dart, TypeScript, JavaScript, Python, Lua, PHP, C#</dt>
@@ -196,7 +196,7 @@
       </header>
       <div class="about__body">
         <p class="about__lead" data-reveal>I'm a full-stack developer from Denmark with an AP degree in Computer Science from UCL University College, Odense (2024). I like taking an idea all the way: design, code, tests, release and the store listing.</p>
-        <p data-reveal>Recently that has meant two Android apps published on Google Play, a competitive browser game with a global leaderboard, a WordPress theme for a Swedish property company, and a set of Discord bots and tools used daily by gaming communities.</p>
+        <p data-reveal>Recently that has meant four Android apps on Google Play, a competitive browser game with a global leaderboard, a WordPress theme for a Swedish property company, and a set of Discord bots and tools used daily by gaming communities.</p>
         <p data-reveal>I care about clean architecture, automated tests and the small details, like audio loops that are <span class="hl-mono">sample-exact</span>.</p>
         <ul class="facts" data-reveal>
           <li><svg aria-hidden="true"><use href="#i-cap"/></svg><span><strong>AP Degree, Computer Science</strong>UCL University College, Odense · 2024</span></li>
@@ -230,19 +230,19 @@
     <div class="container">
       <header class="section-head section-head--row" data-reveal>
         <div>
-          <p class="eyebrow"><span class="eyebrow__num">02</span>Selected work · last 6 months</p>
+          <p class="eyebrow"><span class="eyebrow__num">02</span>Selected work</p>
           <h2 id="projects-title" class="section-title">Things I've built.</h2>
         </div>
-        <p class="section-sub">Seventeen projects from the last six months, from apps on Google Play to Discord bots running in production. Private repos are marked with a lock. Click a card to read more.</p>
+        <p class="section-sub">Apps on Google Play, web projects, Discord bots running in production and game add-ons. Private repos are marked with a lock. Click a card to read more.</p>
       </header>
 
       <div class="filters" role="toolbar" aria-label="Filter projects by category" data-reveal>
-        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">17</span></button>
-        <button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile apps <span class="chip__count">3</span></button>
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">16</span></button>
+        <button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile apps <span class="chip__count">4</span></button>
         <button type="button" class="chip" data-filter="web" aria-pressed="false">Web <span class="chip__count">2</span></button>
         <button type="button" class="chip" data-filter="bots" aria-pressed="false">Discord bots <span class="chip__count">5</span></button>
         <button type="button" class="chip" data-filter="addons" aria-pressed="false">Game add-ons <span class="chip__count">4</span></button>
-        <button type="button" class="chip" data-filter="cv" aria-pressed="false">Automation &amp; CV <span class="chip__count">4</span></button>
+        <button type="button" class="chip" data-filter="cv" aria-pressed="false">Automation &amp; CV <span class="chip__count">2</span></button>
       </div>
       <p class="sr-only" aria-live="polite" id="filter-status"></p>
 
@@ -297,6 +297,9 @@
               <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Aquarium Tracker</button></h3>
               <p class="card__pitch">Water quality, reminders and care. Everything your tank needs in one app.</p>
               <ul class="tags"><li>Flutter</li><li>Dart</li><li>Firebase</li><li>In-app purchases</li></ul>
+              <div class="card__links">
+                <a href="https://play.google.com/store/apps/details?id=com.leaskegaming.aquarium_tracker" target="_blank" rel="noopener"><svg><use href="#i-store"/></svg>Google Play</a>
+              </div>
               <span class="card__cat">Mobile app</span>
             </div>
           </div>
@@ -389,7 +392,7 @@
           <div class="card__inner">
             <div class="card__media card__media--browser">
               <div class="browser">
-                <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span>lindangen · WordPress theme</span></div>
+                <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span>lindangen.nu</span></div>
                 <img src="assets/img/lindangen-screenshot.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Lindängen website: hero 'Personlig kontakt.' and a services section">
               </div>
             </div>
@@ -398,6 +401,9 @@
               <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Lindängen: custom WordPress theme</button></h3>
               <p class="card__pitch">Lightweight custom WordPress theme for a Swedish property-management company.</p>
               <ul class="tags"><li>PHP</li><li>WordPress</li><li>CSS</li><li>JavaScript</li><li>REST API</li></ul>
+              <div class="card__links">
+                <a href="https://lindangen.nu/" target="_blank" rel="noopener"><svg><use href="#i-ext"/></svg>lindangen.nu</a>
+              </div>
               <span class="card__cat">Web</span>
             </div>
           </div>
@@ -417,40 +423,71 @@
           </template>
         </article>
 
-        <article class="card card--w4" data-cat="mobile" style="--pc:#8a96ff" data-reveal>
+        <article class="card card--w4" data-cat="mobile" style="--pc:#3b82f6" data-reveal>
           <div class="card__inner">
-            <div class="card__media card__media--mock">
-              <div class="mock mock--quiz" role="img" aria-label="Quiz Overlay panel on a phone">
-                <div class="mphone">
-                  <div class="mphone__screen">
-                    <div class="quiz-q"><span>Question 7 / 10</span><b>Which layer handles routing?</b><i>Low</i><i class="is-right">High</i><i>Middle</i></div>
-                    <div class="float-panel">
-                      <div class="float-panel__btns"><span>🧠</span><span>🖼️</span><span>🎵</span></div>
-                      <div class="float-panel__ans"><b>HIGH</b><em>94%</em></div>
-                      <div class="float-panel__bar"><span></span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="card__media card__media--fit" style="--fit-img:url(assets/img/tracer-feature.webp)">
+              <img src="assets/img/tracer-feature.webp" width="720" height="352" loading="lazy" decoding="async" alt="Tracer logo">
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-09">Sep 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Quiz Overlay</button></h3>
-              <p class="card__pitch">A floating, draggable overlay that reads the screen with on-device OCR and answers quiz questions.</p>
-              <ul class="tags"><li>Kotlin</li><li>ML Kit</li><li>MediaProjection</li><li>JUnit</li></ul>
-              <span class="card__cat">Android prototype</span>
+              <div class="card__meta"><span class="badge badge--live"><svg><use href="#i-store"/></svg>Published on Google Play</span><time datetime="2025-08">Aug 2025</time></div>
+              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Tracer</button></h3>
+              <p class="card__pitch">Turns your phone into a light box. Float any image on top of other apps and trace or copy it.</p>
+              <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>WindowManager</li><li>Coil</li></ul>
+              <div class="card__links">
+                <a href="https://play.google.com/store/apps/details?id=com.leaske.baseoverlay" target="_blank" rel="noopener"><svg><use href="#i-store"/></svg>Google Play</a>
+              </div>
+              <span class="card__cat">Mobile app</span>
             </div>
           </div>
           <details class="card__more">
             <summary>Project details</summary>
-            <p>Kotlin foreground service drawing over other apps: MediaProjection screen capture, ML Kit on-device text recognition, then normalized Levenshtein fuzzy matching against a local question bank (handles Swedish å/ä/ö). Multi-step image and audio capture flows with playback-capture and microphone fallback. Nothing leaves the device.</p>
+            <p>Android app that shows a picture from your gallery as a floating overlay above any other app. A foreground service keeps the overlay alive, with a dockable control panel for opacity, lock, pinch-to-resize and drag. Built in Kotlin and Jetpack Compose with Material 3 and dark mode.</p>
             <ul>
-              <li>Screen capture, on-device OCR and fuzzy matching, fully offline</li>
-              <li>Unit-tested matcher (13 tests) plus instrumented tests</li>
-              <li>Audio capture with playback-capture and microphone fallback</li>
+              <li>System overlay through WindowManager, run from a foreground service with notification controls</li>
+              <li>Opacity slider, lock/unlock, pinch-to-resize and free positioning, also off-screen</li>
+              <li>Updated for Android 14 foreground service types and the photo picker permissions</li>
             </ul>
-            <p class="card__stack">Kotlin · ML Kit · MediaProjection · Coroutines · JUnit</p>
+            <p class="card__stack">Kotlin · Jetpack Compose · Material 3 · Coil · WindowManager · Foreground service</p>
           </details>
+          <template class="card__gallery">
+            <figure class="slide slide--shot"><img src="assets/img/tracer-promo.webp" width="473" height="711" alt="Tracer store graphic" loading="lazy"></figure>
+            <figure class="slide slide--phone"><div class="phone"><img src="assets/img/tracer-1.webp" width="560" height="1244" alt="Tracer main screen with an image selected" loading="lazy"></div></figure>
+            <figure class="slide slide--phone"><div class="phone"><img src="assets/img/tracer-2.webp" width="560" height="1244" alt="Tracer overlay controls" loading="lazy"></div></figure>
+            <figure class="slide slide--wide slide--light"><img src="assets/img/tracer-feature.webp" width="720" height="352" alt="Tracer logo" loading="lazy"></figure>
+          </template>
+        </article>
+
+        <article class="card card--w4" data-cat="mobile" style="--pc:#34b89a" data-reveal>
+          <div class="card__inner">
+            <div class="card__media card__media--fit" style="--fit-img:url(assets/img/fairshare-feature.webp)">
+              <img src="assets/img/fairshare-feature.webp" width="720" height="352" loading="lazy" decoding="async" alt="FairShare banner: split bills fairly and easily">
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span class="badge badge--live"><svg><use href="#i-store"/></svg>Published on Google Play</span><time datetime="2025-07">Jul 2025</time></div>
+              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">FairShare</button></h3>
+              <p class="card__pitch">Tip calculator and bill splitter. Split the bill fairly, no ads.</p>
+              <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Material 3</li></ul>
+              <div class="card__links">
+                <a href="https://play.google.com/store/apps/details?id=com.leaske.fairshare" target="_blank" rel="noopener"><svg><use href="#i-store"/></svg>Google Play</a>
+              </div>
+              <span class="card__cat">Mobile app</span>
+            </div>
+          </div>
+          <details class="card__more">
+            <summary>Project details</summary>
+            <p>A small, fast Android app for the end of a dinner. Enter the bill, pick a preset tip (10, 15, 20 or 25%) or a custom amount, and split the total between any number of people. Built in Kotlin with Jetpack Compose and Material 3, with light and dark themes.</p>
+            <ul>
+              <li>Tip calculator with presets and custom tip amounts</li>
+              <li>Bill splitting per person with live results</li>
+              <li>Light and dark theme, no ads</li>
+            </ul>
+            <p class="card__stack">Kotlin · Jetpack Compose · Material 3</p>
+          </details>
+          <template class="card__gallery">
+            <figure class="slide slide--wide"><img src="assets/img/fairshare-feature.webp" width="720" height="352" alt="FairShare feature graphic" loading="lazy"></figure>
+            <figure class="slide slide--phone"><div class="phone"><img src="assets/img/fairshare-1.webp" width="560" height="1244" alt="FairShare tip calculator" loading="lazy"></div></figure>
+            <figure class="slide slide--phone"><div class="phone"><img src="assets/img/fairshare-2.webp" width="560" height="1244" alt="FairShare bill splitter in dark mode" loading="lazy"></div></figure>
+          </template>
         </article>
 
         <article class="card card--w4" data-cat="bots" style="--pc:#f5b83d" data-reveal>
@@ -663,36 +700,6 @@
           </details>
         </article>
 
-        <article class="card card--w4" data-cat="cv" style="--pc:#4fd1a5" data-reveal>
-          <div class="card__inner">
-            <div class="card__media card__media--mock">
-              <div class="mock mock--fsm" role="img" aria-label="Bubber Bot state machine">
-                <ol class="fsm">
-                  <li style="--i:0">SEARCH</li><li style="--i:1">WATCH</li><li style="--i:2">DETECT</li><li style="--i:3">VERIFY</li><li style="--i:4">ACT</li>
-                </ol>
-                <p class="fsm__estop"><span></span>E-STOP armed · dry-run</p>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-09">Sep 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Bubber Bot</button></h3>
-              <p class="card__pitch">A vision-driven, safety-gated click automation tool with a GUI.</p>
-              <ul class="tags"><li>Python</li><li>OpenCV</li><li>NumPy</li><li>Tkinter</li></ul>
-              <span class="card__cat">Automation &amp; CV</span>
-            </div>
-          </div>
-          <details class="card__more">
-            <summary>Project details</summary>
-            <p>An explicit state machine (search, watch, detect movement/splash, verify, act) built on OpenCV template matching and frame-difference movement detection, with an emergency stop, dry-run test mode, overlay and tests against recorded video.</p>
-            <ul>
-              <li>Explicit, inspectable state machine instead of ad-hoc loops</li>
-              <li>Emergency stop and dry-run test mode as safety gates</li>
-              <li>Tested against recorded video</li>
-            </ul>
-            <p class="card__stack">Python · OpenCV · NumPy · Tkinter · PyInstaller</p>
-          </details>
-        </article>
-
         <article class="card card--w4" data-cat="cv" style="--pc:#ffd23f" data-reveal>
           <div class="card__inner">
             <div class="card__media card__media--mock">
@@ -796,7 +803,7 @@
           </details>
         </article>
 
-        <article class="card card--w6 card--compact" data-cat="addons" style="--pc:#b39cff" data-reveal>
+        <article class="card card--w12 card--compact" data-cat="addons" style="--pc:#b39cff" data-reveal>
           <div class="card__inner">
             <div class="card__media card__media--mock">
               <div class="mock mock--term" role="img" aria-label="Terminal decoding a GSE3 sequence string">
@@ -823,32 +830,6 @@
           </details>
         </article>
 
-        <article class="card card--w6 card--compact" data-cat="cv" style="--pc:#ff9d4d" data-reveal>
-          <div class="card__inner">
-            <div class="card__media card__media--mock">
-              <div class="mock mock--term" role="img" aria-label="Clash automation log">
-                <div class="term">
-                  <p><span class="t-dim">[state]</span> <span class="t-ok">DEPLOY</span></p>
-                  <p><span class="t-dim">[cv]</span> match 0.93</p>
-                  <p><span class="t-dim">[gemini]</span> ready</p>
-                  <p><span class="t-dim">[tap]</span> 412,233 <span class="t-k">+jitter</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repos</span><time datetime="2026-04">Apr-May 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Clash automation suite</button></h3>
-              <p class="card__pitch">Windows automation that records and replays attacks and fills troop donation requests using screen recognition.</p>
-              <ul class="tags"><li>Python</li><li>OpenCV</li><li>PyAutoGUI</li><li>Gemini API</li></ul>
-              <span class="card__cat">Automation &amp; CV</span>
-            </div>
-          </div>
-          <details class="card__more">
-            <summary>Project details</summary>
-            <p>Two tools (coc-attack-bot and DonationW) combined: OpenCV template matching, Gemini AI base analysis, human-like randomized input and battle-state detection.</p>
-            <p class="card__stack">Python · OpenCV · PyAutoGUI · Gemini API</p>
-          </details>
-        </article>
 
       </div>
 
@@ -857,8 +838,6 @@
         <ul class="earlier__list">
           <li><span class="earlier__name">MossPlatform</span><span class="earlier__tech">ASP.NET (.NET 9)</span><span class="earlier__year">2025</span></li>
           <li><span class="earlier__name">MossVind, MOSS Museum game</span><span class="earlier__tech">Unity · C#</span><span class="earlier__year">2023</span></li>
-          <li><span class="earlier__name">FairShare &amp; Tracer</span><span class="earlier__tech">Kotlin · Android</span><span class="earlier__year">2025</span></li>
-          <li><a class="earlier__name" href="https://github.com/leaskeg/YouTube-Viewer" target="_blank" rel="noopener">YouTube-Viewer <svg aria-hidden="true"><use href="#i-ext"/></svg></a><span class="earlier__tech">Python · public repo</span><span class="earlier__year">GitHub</span></li>
         </ul>
       </div>
     </div>
@@ -1013,7 +992,7 @@
     <p class="pcv__contact">jensgudmand@gmail.com · github.com/leaskeg · leaskeg.github.io · Danish, English</p>
   </header>
   <h2>Summary</h2>
-  <p>Full-stack developer with an AP degree in Computer Science (UCL University College, Odense, 2024). I take ideas all the way: design, code, tests, release and the store listing. In the last 6 months: 17 projects shipped or in active development, 3 live in production (Numa and Aquarium Tracker on Google Play, Flunker Hunt at flunkhunt.se), 8 languages, 200+ commits.</p>
+  <p>Full-stack developer with an AP degree in Computer Science (UCL University College, Odense, 2024). I take ideas all the way: design, code, tests, release and the store listing. Four apps published on Google Play (Numa, Aquarium Tracker, FairShare, Tracer), a live web game at flunkhunt.se and a client site at lindangen.nu. In the last 6 months: 14 projects, 8 languages, 200+ commits.</p>
   <h2>Skills</h2>
   <ul class="pcv__skills">
     <li><b>Languages:</b> Kotlin, Dart, TypeScript, JavaScript, Python, Lua, PHP, C#, Java, SQL</li>
@@ -1030,23 +1009,23 @@
   <div class="pcv__item"><h3>Intern, Unity game developer, MOSS Museum</h3><p>Built an educational Unity/C# game about sustainability for museum visitors; presented at Aalborg University's job fair.</p></div>
   <h2>Education</h2>
   <div class="pcv__item"><h3>AP Degree in Computer Science, UCL University College, Odense <span>June 2024</span></h3></div>
-  <h2>Selected projects (2026)</h2>
+  <h2>Selected projects (2025 - 2026)</h2>
   <ul class="pcv__projects">
     <li><b>Numa: baby sleep sounds</b> (Google Play): Kotlin, Jetpack Compose, Media3; sample-exact loops verified on device; no internet permission.</li>
     <li><b>Aquarium Tracker</b> (Google Play): Flutter, Firebase Auth, Firestore, in-app purchases, home-screen widget.</li>
     <li><b>Flunker Hunt</b> (flunkhunt.se): React, TypeScript, Vite; serverless global leaderboard on Upstash Redis.</li>
     <li><b>ClassicBags</b>: WoW Classic bag add-on in Lua; layered architecture, LuaJIT unit tests.</li>
-    <li><b>Lindängen</b> (client): custom WordPress theme with Customizer editing and FaultReport API integration.</li>
-    <li><b>Quiz Overlay</b>: Android overlay with on-device ML Kit OCR and fuzzy matching.</li>
+    <li><b>Lindängen</b> (client, lindangen.nu): custom WordPress theme with Customizer editing and FaultReport API integration.</li>
+    <li><b>FairShare</b> (Google Play): tip calculator and bill splitter; Kotlin, Jetpack Compose.</li>
+    <li><b>Tracer</b> (Google Play): floating image overlay for tracing; Kotlin, Jetpack Compose, foreground service.</li>
     <li><b>ClashCrown</b>: Discord tournament engine (single/double elimination, groups + playoffs, leagues); Python, SQLAlchemy, pytest.</li>
     <li><b>Basenator</b>: Discord base-link sharing bot; Node.js, discord.js, MariaDB, sharp.</li>
     <li><b>AttackAlert</b>: Clash of Clans war/raid reminder bot in production for multiple clans; Python, aiohttp, MySQL.</li>
     <li><b>TheTurnimator</b>: Discord signups, rosters and timezone-aware reminders; Python, Nextcord.</li>
     <li><b>Clashdex</b>: screenshot-to-video base finder with OpenCV ORB keypoints; Python, yt-dlp, SQLite.</li>
-    <li><b>Bubber Bot</b>: vision-driven, safety-gated automation with explicit state machine; OpenCV, Tkinter.</li>
     <li><b>NodeWatcher</b>: read-only minimap colour-blob detector with audio alerts; Python, NumPy, Pillow.</li>
     <li><b>QuickRecruiter</b> &amp; <b>SnipeBuddy</b>: WoW add-ons in Lua (guild recruiting; auction-house deal finder).</li>
-    <li><b>GSE codec</b>: Python CBOR encoder/decoder for GSE3 strings. <b>Clash automation suite</b>: OpenCV, PyAutoGUI, Gemini API.</li>
+    <li><b>GSE codec</b>: Python CBOR encoder/decoder for GSE3 strings.</li>
   </ul>
 </section>
 

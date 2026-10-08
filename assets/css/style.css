@@ -402,6 +402,7 @@ html.js .filters.has-pill .chip.is-active { background: transparent; }
 .card--w6 { grid-column: span 6; }
 .card--w7 { grid-column: span 7; }
 .card--w8 { grid-column: span 8; }
+.card--w12 { grid-column: 1 / -1; }
 .grid.is-filtered .card { grid-column: span 4; }
 
 .card__inner {
@@ -437,6 +438,8 @@ html.js .filters.has-pill .chip.is-active { background: transparent; }
 .card__media--aqua { background: linear-gradient(120deg, #042832, #0f7881 55%, #18a6af); }
 .card__media--aqua::before { content: ""; position: absolute; inset: -30px; background: url("../img/aqua-feature.webp") center / cover; filter: blur(22px) saturate(1.1); opacity: 0.9; }
 .card__media--aqua > img { position: relative; object-fit: contain; }
+.card__media--fit::before { content: ""; position: absolute; inset: -30px; background: var(--fit-img) center / cover; filter: blur(22px) saturate(1.1); opacity: 0.9; }
+.card__media--fit > img { position: relative; object-fit: contain; }
 
 .card__media--browser { display: grid; place-items: start center; padding: 56px 26px 0; background:
   radial-gradient(70% 90% at 50% 100%, color-mix(in srgb, var(--pc) 35%, transparent), transparent 70%), var(--bg-3); }
@@ -497,6 +500,7 @@ html.js .card__more { display: none; }
 @media (min-width: 900px) {
   .grid:not(.is-filtered) .card--compact .card__inner { flex-direction: row; }
   .grid:not(.is-filtered) .card--compact .card__media { width: 47%; height: auto; min-height: 200px; flex: none; padding: 52px 14px 16px; }
+  .grid:not(.is-filtered) .card--w12.card--compact .card__media { width: 40%; }
 }
 
 .card__media--mock {
@@ -815,7 +819,7 @@ html.js .card[data-reveal].is-in { transform: none; }
 @media (max-width: 1100px) {
   .grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .card, .card--w4, .grid.is-filtered .card { grid-column: span 3; }
-  .card--w5, .card--w6, .card--w7, .card--w8 { grid-column: span 6; }
+  .card--w5, .card--w6, .card--w7, .card--w8, .card--w12 { grid-column: span 6; }
   .grid.is-filtered .card--feat { grid-column: span 6; }
 }
 @media (max-width: 960px) {
@@ -847,7 +851,7 @@ html.js .card[data-reveal].is-in { transform: none; }
 @media (max-width: 680px) {
   :root { --nav-h: 64px; }
   .grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-  .card, .card--w4, .card--w5, .card--w6, .card--w7, .card--w8, .grid.is-filtered .card, .grid.is-filtered .card--feat { grid-column: 1 / -1; }
+  .card, .card--w4, .card--w5, .card--w6, .card--w7, .card--w8, .card--w12, .grid.is-filtered .card, .grid.is-filtered .card--feat { grid-column: 1 / -1; }
   .card--feat .card__media { height: 210px; }
   .logo__text { display: none; }
   .hero { padding-bottom: 96px; }
