@@ -344,9 +344,8 @@
           }
         }
         p.a += (Math.random() - .5) * .03;
-        var k = reduced ? .35 : 1;
-        p.vx += (Math.cos(p.a) * p.sp * k - p.vx) * .05;
-        p.vy += (Math.sin(p.a) * p.sp * k - p.vy) * .05;
+        p.vx += (Math.cos(p.a) * p.sp - p.vx) * .05;
+        p.vy += (Math.sin(p.a) * p.sp - p.vy) * .05;
         p.x += p.vx;
         p.y += p.vy;
         p.tw += .02;
