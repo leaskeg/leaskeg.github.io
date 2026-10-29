@@ -170,11 +170,11 @@
       <dl class="stats__grid" data-reveal-group>
         <div class="stat" data-reveal>
           <dt>Projects shipped or in active development in the last 6&nbsp;months</dt>
-          <dd><span class="stat__num" data-count="14">14</span></dd>
+          <dd><span class="stat__num" data-count="15">15</span></dd>
         </div>
         <div class="stat" data-reveal>
-          <dt>Apps &amp; sites live: 4 apps on Google&nbsp;Play, flunkhunt.se and lindangen.nu</dt>
-          <dd><span class="stat__num" data-count="6">6</span></dd>
+          <dt>Apps &amp; sites live: 4 apps on Google&nbsp;Play, clashdex.app, flunkhunt.se and lindangen.nu</dt>
+          <dd><span class="stat__num" data-count="7">7</span></dd>
         </div>
         <div class="stat" data-reveal>
           <dt>Languages in use: Kotlin, Dart, TypeScript, JavaScript, Python, Lua, PHP, C#</dt>
@@ -218,10 +218,10 @@
     </div>
     <div class="marquee__row marquee__row--rev" aria-hidden="true">
       <ul class="marquee__track">
-        <li>Media3 / ExoPlayer</li><li>Cloud Firestore</li><li>discord.js</li><li>Nextcord</li><li>ML Kit OCR</li><li>pytest</li><li>JUnit</li><li>node:test</li><li>LuaJIT</li><li>Serverless</li><li>Upstash</li><li>sharp</li><li>yt-dlp</li><li>PyInstaller</li><li>Gradle</li><li>Git</li>
+        <li>Media3 / ExoPlayer</li><li>Cloud Firestore</li><li>discord.js</li><li>Nextcord</li><li>ML Kit OCR</li><li>pytest</li><li>JUnit</li><li>node:test</li><li>LuaJIT</li><li>Serverless</li><li>Upstash</li><li>sharp</li><li>PyInstaller</li><li>Gradle</li><li>Git</li>
       </ul>
       <ul class="marquee__track">
-        <li>Media3 / ExoPlayer</li><li>Cloud Firestore</li><li>discord.js</li><li>Nextcord</li><li>ML Kit OCR</li><li>pytest</li><li>JUnit</li><li>node:test</li><li>LuaJIT</li><li>Serverless</li><li>Upstash</li><li>sharp</li><li>yt-dlp</li><li>PyInstaller</li><li>Gradle</li><li>Git</li>
+        <li>Media3 / ExoPlayer</li><li>Cloud Firestore</li><li>discord.js</li><li>Nextcord</li><li>ML Kit OCR</li><li>pytest</li><li>JUnit</li><li>node:test</li><li>LuaJIT</li><li>Serverless</li><li>Upstash</li><li>sharp</li><li>PyInstaller</li><li>Gradle</li><li>Git</li>
       </ul>
     </div>
   </div>
@@ -237,9 +237,9 @@
       </header>
 
       <div class="filters" role="toolbar" aria-label="Filter projects by category" data-reveal>
-        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">16</span></button>
-        <button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile apps <span class="chip__count">4</span></button>
-        <button type="button" class="chip" data-filter="web" aria-pressed="false">Web <span class="chip__count">2</span></button>
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">17</span></button>
+        <button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile apps <span class="chip__count">5</span></button>
+        <button type="button" class="chip" data-filter="web" aria-pressed="false">Web <span class="chip__count">3</span></button>
         <button type="button" class="chip" data-filter="bots" aria-pressed="false">Discord bots <span class="chip__count">5</span></button>
         <button type="button" class="chip" data-filter="addons" aria-pressed="false">Game add-ons <span class="chip__count">4</span></button>
         <button type="button" class="chip" data-filter="cv" aria-pressed="false">Automation &amp; CV <span class="chip__count">2</span></button>
@@ -320,6 +320,73 @@
             <figure class="slide slide--phone"><div class="phone"><img src="assets/img/aqua-2_reminders.webp" width="560" height="1244" alt="Maintenance reminders" loading="lazy"></div></figure>
             <figure class="slide slide--phone"><div class="phone"><img src="assets/img/aqua-3_livestock.webp" width="560" height="1244" alt="Livestock list" loading="lazy"></div></figure>
             <figure class="slide slide--phone"><div class="phone"><img src="assets/img/aqua-4_calculators.webp" width="560" height="1244" alt="Pro calculators" loading="lazy"></div></figure>
+          </template>
+        </article>
+
+        <article class="card card--w6 card--feat" data-cat="web bots cv" style="--pc:#ffc83d" data-reveal>
+          <div class="card__inner">
+            <div class="card__media">
+              <img src="assets/img/clashdex-og.webp" width="1200" height="630" loading="lazy" decoding="async" alt="ClashDex banner: a gold shield with a star and the question 'Who 3-starred this base?'">
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span class="badge badge--live"><span class="pulse" aria-hidden="true"></span>Live</span><time datetime="2026-10">Oct 2026</time></div>
+              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">ClashDex: Clash of Clans base finder</button></h3>
+              <p class="card__pitch">Who 3-starred this base? Drop a screenshot of any TH18 base and get the YouTube attacks that beat it, or the link to copy it.</p>
+              <ul class="tags"><li>Python</li><li>Computer vision</li><li>Nextcord</li><li>Stripe</li></ul>
+              <div class="card__links">
+                <a href="https://clashdex.app" target="_blank" rel="noopener"><svg><use href="#i-ext"/></svg>clashdex.app</a>
+              </div>
+              <span class="card__cat">Web · Discord bot · Computer vision</span>
+            </div>
+          </div>
+          <details class="card__more">
+            <summary>Project details</summary>
+            <p>A website and a Discord bot that recognise a Clash of Clans base from a single screenshot and search tens of thousands of bases from YouTube attack videos. Results open the video right at the attack. Works with any scenery, zoom or angle, from the scout screen, the war map or your own village.</p>
+            <ul>
+              <li>One account and token balance across clashdex.app and Discord (<code>/findbase</code>, <code>/baselink</code>)</li>
+              <li>Fair pricing: a search only costs a token when it finds a confident match</li>
+              <li>Discord sign-in and Stripe payments; uploaded screenshots are never stored</li>
+              <li>The index grows by itself as new attack videos are published</li>
+            </ul>
+            <p class="card__stack">Python · Computer vision · Nextcord · Stripe · Cloudflare</p>
+          </details>
+          <template class="card__gallery">
+            <figure class="slide slide--wide slide--xl"><img src="assets/img/clashdex-og.webp" width="1200" height="630" alt="ClashDex banner" loading="lazy"></figure>
+          </template>
+        </article>
+
+        <article class="card card--w6 card--feat" data-cat="mobile" style="--pc:#1f4fd1" data-reveal>
+          <div class="card__inner">
+            <div class="card__media">
+              <img src="assets/img/tickloop-feature.webp" width="1024" height="500" loading="lazy" decoding="async" alt="Tickloop banner: the tick-and-loop logo next to a grid of ticked and unticked dots">
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span class="badge badge--client"><svg><use href="#i-store"/></svg>Coming to Google Play</span><time datetime="2026-10">Oct 2026</time></div>
+              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Tickloop: bill checklist</button></h3>
+              <p class="card__pitch">A monthly bill checklist that resets itself on payday. Share bills with your household and see who paid.</p>
+              <ul class="tags"><li>Android</li><li>JavaScript</li><li>Cloud Firestore</li><li>6 languages</li></ul>
+              <span class="card__cat">Mobile app</span>
+            </div>
+          </div>
+          <details class="card__more">
+            <summary>Project details</summary>
+            <p>Tick bills off as you pay them; when your salary arrives the list starts fresh. First-run setup picks language, country and payday and fills in the bills common in that country. Households join with a 6-letter invite code and split bills equally or by percentage, with offline sync through Cloud Firestore and anonymous sign-in, so nobody makes an account.</p>
+            <ul>
+              <li>Paydays on a fixed day (moved before weekends), the last weekday, weekly or every other week</li>
+              <li>Bills that repeat monthly, quarterly, half-yearly or yearly, or end by themselves</li>
+              <li>Reminders before due dates, and a history of every pay period</li>
+              <li>Starter lists for 7 countries, 6 languages, no ads and no tracking</li>
+            </ul>
+            <p class="card__stack">Android (Java, WebView) · HTML/CSS/JavaScript · Firebase Auth · Cloud Firestore · Gradle</p>
+          </details>
+          <template class="card__gallery">
+            <figure class="slide slide--wide"><img src="assets/img/tickloop-feature.webp" width="1024" height="500" alt="Tickloop feature graphic" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-1-bills.webp" width="560" height="996" alt="Tickloop bill checklist for the current pay period" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-2-household.webp" width="560" height="996" alt="Shared household bills showing who paid" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-3-add-bill.webp" width="560" height="996" alt="Adding a bill" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-4-income.webp" width="560" height="996" alt="Income list" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-5-invite.webp" width="560" height="996" alt="Household invite code" loading="lazy"></figure>
+            <figure class="slide slide--shot"><img src="assets/img/tickloop-6-dark.webp" width="560" height="996" alt="Tickloop in dark mode" loading="lazy"></figure>
           </template>
         </article>
 
@@ -652,54 +719,6 @@
           </details>
         </article>
 
-        <article class="card card--w4" data-cat="bots cv" style="--pc:#38d6e8" data-reveal>
-          <div class="card__inner">
-            <div class="card__media card__media--mock">
-              <div class="mock mock--match" role="img" aria-label="Clashdex keypoint matching">
-                <svg viewBox="0 0 400 230" aria-hidden="true">
-                  <defs>
-                    <pattern id="mgrid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" fill="none" stroke="currentColor" stroke-opacity=".12"/></pattern>
-                  </defs>
-                  <g class="m-base" transform="translate(30 40)">
-                    <rect width="140" height="140" rx="10" fill="url(#mgrid)" stroke="currentColor" stroke-opacity=".35"/>
-                    <g transform="rotate(45 70 70)" fill="none" stroke="var(--pc)" stroke-width="2"><rect x="30" y="30" width="80" height="80" rx="4"/><rect x="50" y="50" width="40" height="40" rx="3"/></g>
-                    <rect x="62" y="62" width="16" height="16" rx="2" fill="var(--pc)"/>
-                    <circle cx="36" cy="40" r="5" fill="currentColor" fill-opacity=".45"/><circle cx="106" cy="98" r="5" fill="currentColor" fill-opacity=".45"/><rect x="96" y="30" width="12" height="12" rx="2" fill="currentColor" fill-opacity=".35"/>
-                  </g>
-                  <g class="m-base" transform="translate(230 50) rotate(6 70 70) scale(.9)">
-                    <rect width="140" height="140" rx="10" fill="url(#mgrid)" stroke="currentColor" stroke-opacity=".35"/>
-                    <g transform="rotate(45 70 70)" fill="none" stroke="var(--pc)" stroke-width="2"><rect x="30" y="30" width="80" height="80" rx="4"/><rect x="50" y="50" width="40" height="40" rx="3"/></g>
-                    <rect x="62" y="62" width="16" height="16" rx="2" fill="var(--pc)"/>
-                    <circle cx="36" cy="40" r="5" fill="currentColor" fill-opacity=".45"/><circle cx="106" cy="98" r="5" fill="currentColor" fill-opacity=".45"/><rect x="96" y="30" width="12" height="12" rx="2" fill="currentColor" fill-opacity=".35"/>
-                  </g>
-                  <g class="m-lines" stroke="var(--pc)" stroke-width="1.2" fill="var(--pc)">
-                    <path d="M100 52 L297 64"/><path d="M66 80 L265 90"/><path d="M136 138 L322 146"/><path d="M100 167 L290 175"/><path d="M100 110 L292 120"/><path d="M134 80 L326 94"/>
-                    <circle cx="100" cy="52" r="2.6"/><circle cx="297" cy="64" r="2.6"/><circle cx="66" cy="80" r="2.6"/><circle cx="265" cy="90" r="2.6"/><circle cx="136" cy="138" r="2.6"/><circle cx="322" cy="146" r="2.6"/><circle cx="100" cy="167" r="2.6"/><circle cx="290" cy="175" r="2.6"/><circle cx="100" cy="110" r="2.6"/><circle cx="292" cy="120" r="2.6"/><circle cx="134" cy="80" r="2.6"/><circle cx="326" cy="94" r="2.6"/>
-                  </g>
-                </svg>
-                <p class="match-readout"><span>ORB</span> 144 good matches · <b>same base</b></p>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-08">Aug 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">Clashdex: base finder</button></h3>
-              <p class="card__pitch">Upload a screenshot of a base, get the video that shows how to beat it.</p>
-              <ul class="tags"><li>Python</li><li>OpenCV ORB</li><li>yt-dlp</li><li>SQLite</li></ul>
-              <span class="card__cat">Discord bot · Computer vision</span>
-            </div>
-          </div>
-          <details class="card__more">
-            <summary>Project details</summary>
-            <p>An indexing pipeline discovers new videos from curated YouTube channels, extracts and quality-filters frames, normalizes the base region, and stores ORB keypoint descriptors. It replaced an earlier perceptual-hash matcher after measuring collisions: ORB separated same-base pairs (~144 good matches) from different bases (~3). Exposed through a Discord bot.</p>
-            <ul>
-              <li>Measured, then replaced perceptual hashing with ORB keypoints</li>
-              <li>~144 good matches for the same base vs ~3 for different bases</li>
-              <li>Automatic discovery and frame quality-filtering of new videos</li>
-            </ul>
-            <p class="card__stack">Python · OpenCV (ORB) · yt-dlp · SQLite · Discord</p>
-          </details>
-        </article>
-
         <article class="card card--w4" data-cat="cv" style="--pc:#ffd23f" data-reveal>
           <div class="card__inner">
             <div class="card__media card__media--mock">
@@ -803,7 +822,7 @@
           </details>
         </article>
 
-        <article class="card card--w12 card--compact" data-cat="addons" style="--pc:#b39cff" data-reveal>
+        <article class="card card--w4" data-cat="addons" style="--pc:#b39cff" data-reveal>
           <div class="card__inner">
             <div class="card__media card__media--mock">
               <div class="mock mock--term" role="img" aria-label="Terminal decoding a GSE3 sequence string">
@@ -856,7 +875,7 @@
           <span class="tl__node" aria-hidden="true"></span>
           <p class="tl__when">2025 - present</p>
           <h3 class="tl__role">Independent developer</h3>
-          <p class="tl__text">Building and publishing my own apps, games, bots and tools (Numa, Aquarium Tracker, Flunker Hunt, ClassicBags and more), plus client work like the Lindängen WordPress theme.</p>
+          <p class="tl__text">Building and publishing my own apps, games, bots and tools (Numa, ClashDex, Tickloop, Aquarium Tracker, Flunker Hunt and more), plus client work like the Lindängen WordPress theme.</p>
         </li>
         <li class="tl" data-reveal>
           <span class="tl__node" aria-hidden="true"></span>
@@ -913,7 +932,7 @@
         </div>
         <div class="skill-row" data-reveal>
           <h3><span>05</span>Computer vision &amp; automation</h3>
-          <ul class="skill-chips"><li>OpenCV</li><li>ML Kit OCR</li><li>NumPy</li><li>Image hashing / ORB</li></ul>
+          <ul class="skill-chips"><li>OpenCV</li><li>ML Kit OCR</li><li>NumPy</li><li>Image recognition</li></ul>
         </div>
         <div class="skill-row" data-reveal>
           <h3><span>06</span>Practices</h3>
@@ -992,18 +1011,18 @@
     <p class="pcv__contact">jensgudmand@gmail.com · github.com/leaskeg · leaskeg.github.io · Danish, English</p>
   </header>
   <h2>Summary</h2>
-  <p>Full-stack developer with an AP degree in Computer Science (UCL University College, Odense, 2024). I take ideas all the way: design, code, tests, release and the store listing. Four apps published on Google Play (Numa, Aquarium Tracker, FairShare, Tracer), a live web game at flunkhunt.se and a client site at lindangen.nu. In the last 6 months: 14 projects, 8 languages, 200+ commits.</p>
+  <p>Full-stack developer with an AP degree in Computer Science (UCL University College, Odense, 2024). I take ideas all the way: design, code, tests, release and the store listing. Four apps published on Google Play (Numa, Aquarium Tracker, FairShare, Tracer), a live web game at flunkhunt.se, the ClashDex base finder at clashdex.app and a client site at lindangen.nu. In the last 6 months: 15 projects, 8 languages, 200+ commits.</p>
   <h2>Skills</h2>
   <ul class="pcv__skills">
     <li><b>Languages:</b> Kotlin, Dart, TypeScript, JavaScript, Python, Lua, PHP, C#, Java, SQL</li>
     <li><b>Mobile:</b> Jetpack Compose, Media3/ExoPlayer, Flutter, Firebase, Google Play publishing</li>
     <li><b>Web:</b> React, Vite, Node.js, ASP.NET / .NET, WordPress, HTML/CSS</li>
     <li><b>Data &amp; backend:</b> SQLAlchemy, MySQL/MariaDB, SQLite, Redis, Firestore, REST APIs, Serverless</li>
-    <li><b>Computer vision &amp; automation:</b> OpenCV, ML Kit OCR, NumPy, image hashing/ORB</li>
+    <li><b>Computer vision &amp; automation:</b> OpenCV, ML Kit OCR, NumPy, image recognition</li>
     <li><b>Practices:</b> automated testing (pytest, JUnit, node:test, LuaJIT), Git, CI-ready builds, release signing</li>
   </ul>
   <h2>Experience</h2>
-  <div class="pcv__item"><h3>Independent developer <span>2025 - present</span></h3><p>Building and publishing my own apps, games, bots and tools (Numa, Aquarium Tracker, Flunker Hunt, ClassicBags and more), plus client work (Lindängen WordPress theme).</p></div>
+  <div class="pcv__item"><h3>Independent developer <span>2025 - present</span></h3><p>Building and publishing my own apps, games, bots and tools (Numa, ClashDex, Tickloop, Aquarium Tracker, Flunker Hunt and more), plus client work (Lindängen WordPress theme).</p></div>
   <div class="pcv__item"><h3>Freelance Specialist, Outlier AI</h3><p>Training and evaluating AI models on C#, Python and Java code; writing test cases to improve model accuracy.</p></div>
   <div class="pcv__item"><h3>Freelance web developer, MOSS Museum</h3><p>WordPress site with custom JavaScript map plugins; improved load time by ~35%. Built MossPlatform, an ASP.NET (.NET 9) platform for hosting the museum's games.</p></div>
   <div class="pcv__item"><h3>Intern, Unity game developer, MOSS Museum</h3><p>Built an educational Unity/C# game about sustainability for museum visitors; presented at Aalborg University's job fair.</p></div>
@@ -1012,6 +1031,8 @@
   <h2>Selected projects (2025 - 2026)</h2>
   <ul class="pcv__projects">
     <li><b>Numa: baby sleep sounds</b> (Google Play): Kotlin, Jetpack Compose, Media3; sample-exact loops verified on device; no internet permission.</li>
+    <li><b>ClashDex</b> (live, clashdex.app): Clash of Clans base finder, website + Discord bot; finds 3-star attack videos from one screenshot; Python, computer vision, Stripe.</li>
+    <li><b>Tickloop</b> (coming to Google Play): bill checklist that resets on payday, with shared households; Android, JavaScript, Cloud Firestore.</li>
     <li><b>Aquarium Tracker</b> (Google Play): Flutter, Firebase Auth, Firestore, in-app purchases, home-screen widget.</li>
     <li><b>Flunker Hunt</b> (flunkhunt.se): React, TypeScript, Vite; serverless global leaderboard on Upstash Redis.</li>
     <li><b>ClassicBags</b>: WoW Classic bag add-on in Lua; layered architecture, LuaJIT unit tests.</li>
@@ -1022,7 +1043,6 @@
     <li><b>Basenator</b>: Discord base-link sharing bot; Node.js, discord.js, MariaDB, sharp.</li>
     <li><b>AttackAlert</b>: Clash of Clans war/raid reminder bot in production for multiple clans; Python, aiohttp, MySQL.</li>
     <li><b>TheTurnimator</b>: Discord signups, rosters and timezone-aware reminders; Python, Nextcord.</li>
-    <li><b>Clashdex</b>: screenshot-to-video base finder with OpenCV ORB keypoints; Python, yt-dlp, SQLite.</li>
     <li><b>NodeWatcher</b>: read-only minimap colour-blob detector with audio alerts; Python, NumPy, Pillow.</li>
     <li><b>QuickRecruiter</b> &amp; <b>SnipeBuddy</b>: WoW add-ons in Lua (guild recruiting; auction-house deal finder).</li>
     <li><b>GSE codec</b>: Python CBOR encoder/decoder for GSE3 strings.</li>
