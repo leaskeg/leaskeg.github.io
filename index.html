@@ -237,11 +237,11 @@
       </header>
 
       <div class="filters" role="toolbar" aria-label="Filter projects by category" data-reveal>
-        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">17</span></button>
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span class="chip__count">15</span></button>
         <button type="button" class="chip" data-filter="mobile" aria-pressed="false">Mobile apps <span class="chip__count">5</span></button>
         <button type="button" class="chip" data-filter="web" aria-pressed="false">Web <span class="chip__count">3</span></button>
         <button type="button" class="chip" data-filter="bots" aria-pressed="false">Discord bots <span class="chip__count">5</span></button>
-        <button type="button" class="chip" data-filter="addons" aria-pressed="false">Game add-ons <span class="chip__count">4</span></button>
+        <button type="button" class="chip" data-filter="addons" aria-pressed="false">Game add-ons <span class="chip__count">2</span></button>
         <button type="button" class="chip" data-filter="cv" aria-pressed="false">Automation &amp; CV <span class="chip__count">2</span></button>
       </div>
       <p class="sr-only" aria-live="polite" id="filter-status"></p>
@@ -427,35 +427,7 @@
           </template>
         </article>
 
-        <article class="card card--w7 card--feat" data-cat="addons" style="--pc:#e3b55a" data-reveal>
-          <div class="card__inner">
-            <div class="card__media">
-              <img src="assets/img/classicbags-concept.webp" width="1400" height="933" loading="lazy" decoding="async" alt="ClassicBags concept: individual Classic-styled bag windows with search, sorting and settings panels">
-            </div>
-            <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-10">Oct 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">ClassicBags: WoW Classic add-on</button></h3>
-              <p class="card__pitch">Individual bags. Classic feel. Modern features.</p>
-              <ul class="tags"><li>Lua</li><li>WoW API</li><li>LuaJIT tests</li></ul>
-              <span class="card__cat">Game add-on</span>
-            </div>
-          </div>
-          <details class="card__more">
-            <summary>Project details</summary>
-            <p>Bag add-on for World of Warcraft Classic Era written in Lua. Every bag keeps its own Classic-styled window, with search, safe one-click sorting, bag assignments and a quality glow.</p>
-            <ul>
-              <li>Layered architecture: Core / Compat adapter / Inventory model / Theme / UI</li>
-              <li>Offline LuaJIT unit tests for the inventory model, search, sorting and assignments</li>
-              <li>38 commits, prepared for CurseForge release</li>
-            </ul>
-            <p class="card__stack">Lua · WoW API · LuaJIT tests</p>
-          </details>
-          <template class="card__gallery">
-            <figure class="slide slide--wide slide--xl"><img src="assets/img/classicbags-concept.webp" width="1400" height="933" alt="ClassicBags concept sheet" loading="lazy"></figure>
-          </template>
-        </article>
-
-        <article class="card card--w8 card--feat" data-cat="web" style="--pc:#3fa35a" data-reveal>
+        <article class="card card--w7 card--feat" data-cat="web" style="--pc:#3fa35a" data-reveal>
           <div class="card__inner">
             <div class="card__media card__media--browser">
               <div class="browser">
@@ -768,10 +740,13 @@
               </div>
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-09">Sep 2026</time></div>
+              <div class="card__meta"><span class="badge badge--live"><svg><use href="#i-ext"/></svg>Published on CurseForge</span><time datetime="2026-09">Sep 2026</time></div>
               <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">QuickRecruiter</button></h3>
               <p class="card__pitch">Find unguilded players and invite them to your guild with one click.</p>
               <ul class="tags"><li>Lua</li><li>WoW API</li><li>LuaJIT</li><li>PowerShell</li></ul>
+              <div class="card__links">
+                <a href="https://www.curseforge.com/wow/addons/quickrecruiter" target="_blank" rel="noopener"><svg><use href="#i-ext"/></svg>CurseForge</a>
+              </div>
               <span class="card__cat">Game add-on</span>
             </div>
           </div>
@@ -781,7 +756,7 @@
             <ul>
               <li>One codebase for Classic Era, TBC Anniversary and Retail</li>
               <li>Smoke test loads the whole add-on against a stubbed game API</li>
-              <li>Packaging script for release zips</li>
+              <li>Published on CurseForge, with a packaging script for release zips</li>
             </ul>
             <p class="card__stack">Lua · WoW API · LuaJIT · PowerShell</p>
           </details>
@@ -819,33 +794,6 @@
               <li>Never relists below break-even</li>
             </ul>
             <p class="card__stack">Lua · WoW API</p>
-          </details>
-        </article>
-
-        <article class="card card--w4" data-cat="addons" style="--pc:#b39cff" data-reveal>
-          <div class="card__inner">
-            <div class="card__media card__media--mock">
-              <div class="mock mock--term" role="img" aria-label="Terminal decoding a GSE3 sequence string">
-                <div class="term">
-                  <p><span class="t-p">$</span> gse decode seq.txt</p>
-                  <p class="t-dim">!GSE3!eJyLVkrOz0n</p>
-                  <p><span class="t-ok">✔</span> CBOR · zlib · 2.1 KB</p>
-                  <p><span class="t-k">name</span>: <span class="t-s">"Hunter_Lvl"</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__meta"><span class="badge badge--private"><svg><use href="#i-lock"/></svg>Private repo</span><time datetime="2026-10">Oct 2026</time></div>
-              <h3 class="card__title"><button type="button" class="card__open" aria-haspopup="dialog">GSE sequences &amp; codec</button></h3>
-              <p class="card__pitch">Encoder/decoder for GnomeSequencer <code>!GSE3!</code> strings (CBOR + compression) plus a researched hunter levelling sequence.</p>
-              <ul class="tags"><li>Python</li><li>CBOR</li></ul>
-              <span class="card__cat">Game add-on tooling</span>
-            </div>
-          </div>
-          <details class="card__more">
-            <summary>Project details</summary>
-            <p>A Python encoder/decoder for GnomeSequencer <code>!GSE3!</code> import strings (compressed CBOR payloads), plus a researched hunter levelling sequence built with it.</p>
-            <p class="card__stack">Python · CBOR</p>
           </details>
         </article>
 
@@ -1035,7 +983,6 @@
     <li><b>Tickloop</b> (coming to Google Play): bill checklist that resets on payday, with shared households; Android, JavaScript, Cloud Firestore.</li>
     <li><b>Aquarium Tracker</b> (Google Play): Flutter, Firebase Auth, Firestore, in-app purchases, home-screen widget.</li>
     <li><b>Flunker Hunt</b> (flunkhunt.se): React, TypeScript, Vite; serverless global leaderboard on Upstash Redis.</li>
-    <li><b>ClassicBags</b>: WoW Classic bag add-on in Lua; layered architecture, LuaJIT unit tests.</li>
     <li><b>Lindängen</b> (client, lindangen.nu): custom WordPress theme with Customizer editing and FaultReport API integration.</li>
     <li><b>FairShare</b> (Google Play): tip calculator and bill splitter; Kotlin, Jetpack Compose.</li>
     <li><b>Tracer</b> (Google Play): floating image overlay for tracing; Kotlin, Jetpack Compose, foreground service.</li>
@@ -1044,8 +991,7 @@
     <li><b>AttackAlert</b>: Clash of Clans war/raid reminder bot in production for multiple clans; Python, aiohttp, MySQL.</li>
     <li><b>TheTurnimator</b>: Discord signups, rosters and timezone-aware reminders; Python, Nextcord.</li>
     <li><b>NodeWatcher</b>: read-only minimap colour-blob detector with audio alerts; Python, NumPy, Pillow.</li>
-    <li><b>QuickRecruiter</b> &amp; <b>SnipeBuddy</b>: WoW add-ons in Lua (guild recruiting; auction-house deal finder).</li>
-    <li><b>GSE codec</b>: Python CBOR encoder/decoder for GSE3 strings.</li>
+    <li><b>QuickRecruiter</b> (CurseForge) &amp; <b>SnipeBuddy</b>: WoW add-ons in Lua (guild recruiting; auction-house deal finder).</li>
   </ul>
 </section>
 
