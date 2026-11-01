@@ -824,6 +824,10 @@ html.js .card[data-reveal].is-in { transform: none; }
   .card--w5, .card--w6, .card--w7, .card--w8, .card--w12 { grid-column: span 6; }
   .grid.is-filtered .card--feat { grid-column: span 6; }
 }
+@media (max-width: 1060px) {
+  .nav__links, .nav__cv { display: none; }
+  .burger { display: inline-block; }
+}
 @media (max-width: 960px) {
   .nav__links, .nav__cv { display: none; }
   .burger { display: inline-block; }
