@@ -720,6 +720,8 @@ html.js .skill-row.is-in .skill-chips li:hover { transform: translateY(-3px); tr
 
 .footer { border-top: 1px solid var(--line); padding-block: 26px; font-size: 0.86rem; color: var(--muted); }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.footer p a { color: var(--text-2); text-decoration: underline; text-underline-offset: 3px; }
+.footer p a:hover { color: var(--a1); }
 .to-top { display: grid; place-items: center; width: 46px; height: 46px; flex: none; border-radius: 12px; border: 1px solid var(--line-strong); color: var(--text); transition: transform 0.4s var(--ease-spring), border-color 0.25s, background-color 0.25s; }
 .to-top svg { width: 20px; height: 20px; }
 .to-top:hover { transform: translateY(-4px); border-color: var(--a1); background: var(--surface-2); }

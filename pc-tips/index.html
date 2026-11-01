@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Skip the PC cleaners | Jens Gudmand Bach</title>
+  <meta name="description" content="Don't install PC cleaners. Windows already has safe, built-in commands that repair, clean, update and speed up your PC.">
+  <meta name="author" content="Jens Gudmand Bach">
+  <meta name="theme-color" content="#070b18">
+  <link rel="canonical" href="https://leaskeg.github.io/pc-tips/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://leaskeg.github.io/pc-tips/">
+  <meta property="og:title" content="Skip the PC cleaners">
+  <meta property="og:description" content="Safe, built-in Windows commands that do what PC cleaners promise, for free.">
+  <meta property="og:image" content="https://leaskeg.github.io/assets/img/og.png">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('jb-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #070b18; --surface: rgba(140,165,220,.055); --code-bg: rgba(5,9,20,.6);
+      --text: #eef2fa; --text-2: #b9c5de; --muted: #8e9bb8; --line: rgba(140,165,220,.18);
+      --a1: #2ee6c5; --a2: #3d7bff; --a3: #a78bfa; --warn: #fbbf6a; --on-accent: #050914;
+      --grad: linear-gradient(110deg, var(--a1), var(--a2) 52%, var(--a3));
+      --aurora-opacity: .4;
+      color-scheme: dark;
+    }
+    :root[data-theme="light"] {
+      --bg: #f3f5fb; --surface: rgba(20,40,100,.035); --code-bg: #e9eef9;
+      --text: #0a1126; --text-2: #2f3b57; --muted: #536079; --line: rgba(20,40,100,.14);
+      --a1: #0a9c86; --a2: #2b5be0; --a3: #7a58e0; --warn: #a15c00; --on-accent: #fff;
+      --aurora-opacity: .2;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0 16px 64px; background: var(--bg); color: var(--text);
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .aurora { position: fixed; inset: -20%; z-index: -1; opacity: var(--aurora-opacity); pointer-events: none; }
+    .aurora span { position: absolute; border-radius: 50%; filter: blur(90px); }
+    .aurora span:nth-child(1) { width: 55vw; height: 45vw; left: 45%; top: 0; background: radial-gradient(closest-side, var(--a1), transparent); }
+    .aurora span:nth-child(2) { width: 50vw; height: 40vw; left: 5%; top: 40%; background: radial-gradient(closest-side, var(--a3), transparent); }
+    main { max-width: 760px; margin: 0 auto; }
+    .back { display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; color: var(--muted); text-decoration: none; font-size: .92rem; }
+    .back:hover { color: var(--text); }
+    .back svg { width: 16px; height: 16px; }
+    .label { font-family: "JetBrains Mono", monospace; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--a1); margin: 48px 0 0; }
+    h1, h2 { font-family: "Space Grotesk", sans-serif; letter-spacing: -.03em; line-height: 1.15; }
+    h1 { font-size: clamp(2rem, 7vw, 3.2rem); margin: 10px 0 0; }
+    h1 em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { font-size: 1.12rem; color: var(--text-2); margin: 16px 0 0; }
+    .start { margin: 28px 0 0; padding: 16px 18px; border: 1px solid var(--line); border-left: 3px solid var(--a1); border-radius: 12px; background: var(--surface); color: var(--text-2); }
+    .start strong { color: var(--text); }
+    section { margin-top: 44px; }
+    h2 { font-size: 1.4rem; margin: 0; display: flex; align-items: baseline; gap: 12px; }
+    h2 span { font-family: "JetBrains Mono", monospace; font-size: .8rem; color: var(--a1); letter-spacing: 0; }
+    section > p { color: var(--text-2); margin: 8px 0 0; }
+    .cmd { position: relative; margin: 14px 0 0; border: 1px solid var(--line); border-radius: 12px; background: var(--code-bg); }
+    .cmd pre { margin: 0; padding: 14px 92px 14px 16px; overflow-x: auto; font-family: "JetBrains Mono", Consolas, monospace; font-size: .86rem; line-height: 1.7; color: var(--text); }
+    .copy {
+      position: absolute; top: 8px; right: 8px; min-height: 32px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px;
+      background: var(--surface); color: var(--text-2); font: 600 .78rem "Inter", sans-serif; cursor: pointer;
+    }
+    .copy:hover { color: var(--text); border-color: var(--a1); }
+    .copy:focus-visible, .back:focus-visible { outline: 2px solid var(--a1); outline-offset: 2px; }
+    .note { font-size: .92rem; color: var(--muted); margin: 10px 0 0; }
+    .note code { font-family: "JetBrains Mono", Consolas, monospace; font-size: .85em; padding: 1px 6px; border-radius: 6px; background: var(--code-bg); color: var(--text); }
+    .note b { color: var(--warn); font-weight: 600; }
+    .highlight { padding: 22px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); }
+    footer { max-width: 760px; margin: 56px auto 0; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+  </style>
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span></div>
+  <main>
+    <a class="back" href="/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      Back to the portfolio
+    </a>
+
+    <p class="label">PC tips</p>
+    <h1>Skip the <em>PC cleaners</em>.</h1>
+    <p class="lead">Don't install "PC cleaner" or "registry cleaner" apps. Windows already has safe, built-in commands that do the same job, for free and without ads or upsells.</p>
+
+    <div class="start">
+      <strong>How to run these:</strong> right-click the Start button, choose <strong>Terminal (Admin)</strong> or <strong>Windows PowerShell (Admin)</strong>, then paste a command and press Enter.
+    </div>
+
+    <section class="highlight">
+      <h2><span>TL;DR</span>The one-line checkup</h2>
+      <p>Repairs Windows, checks the disk and optimizes the drive. Restart the PC when it's done.</p>
+      <div class="cmd"><pre>DISM /Online /Cleanup-Image /RestoreHealth; sfc /scannow; chkdsk C: /scan; Optimize-Volume -DriveLetter C</pre><button class="copy" type="button">Copy</button></div>
+    </section>
+
+    <section>
+      <h2><span>01</span>Update all your programs</h2>
+      <p>Updates every program winget knows about, silently.</p>
+      <div class="cmd"><pre>winget upgrade --all --silent --accept-package-agreements --accept-source-agreements --include-unknown --disable-interactivity</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">Close games and launchers first. If one program blocks the run, skip it with <code>winget pin add --id &lt;Id&gt;</code> and run the command again.</p>
+    </section>
+
+    <section>
+      <h2><span>02</span>Fix corrupted Windows files</h2>
+      <p>DISM repairs Windows' own backup copy, then SFC uses it to fix broken system files.</p>
+      <div class="cmd"><pre>DISM /Online /Cleanup-Image /RestoreHealth
+sfc /scannow</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">DISM can look stuck at 62%. That's normal, so let it finish.</p>
+    </section>
+
+    <section>
+      <h2><span>03</span>Check the disk for errors</h2>
+      <p>Scans the drive while you keep using the PC.</p>
+      <div class="cmd"><pre>chkdsk C: /scan</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">If it finds problems, run <code>chkdsk C: /f</code> and press Y to repair at the next restart.</p>
+    </section>
+
+    <section>
+      <h2><span>04</span>Free up space</h2>
+      <p>Clears temp files and old Windows Update leftovers.</p>
+      <div class="cmd"><pre>cleanmgr /sagerun:1
+DISM /Online /Cleanup-Image /StartComponentCleanup
+Remove-Item "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">First time? Run <code>cleanmgr /sageset:1</code> once and tick what you want cleaned.</p>
+    </section>
+
+    <section>
+      <h2><span>05</span>Optimize the drive</h2>
+      <p>Windows picks the right fix itself: TRIM for an SSD, defragmenting for a hard disk.</p>
+      <div class="cmd"><pre>Optimize-Volume -DriveLetter C -Verbose</pre><button class="copy" type="button">Copy</button></div>
+    </section>
+
+    <section>
+      <h2><span>06</span>Scan for malware</h2>
+      <p>Updates Microsoft Defender and runs a full scan. No extra antivirus needed.</p>
+      <div class="cmd"><pre>Update-MpSignature; Start-MpScan -ScanType FullScan</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">A full scan can take an hour or more.</p>
+    </section>
+
+    <section>
+      <h2><span>07</span>Find what's slowing it down</h2>
+      <p>Lists programs that start with Windows, and the ones using the most CPU.</p>
+      <div class="cmd"><pre>Get-CimInstance Win32_StartupCommand | Select Name, Command
+Get-Process | Sort CPU -Descending | Select -First 15 Name, CPU, WS</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">Turn startup apps off in <b>Task Manager → Startup apps</b>. Game launchers are the usual suspects.</p>
+    </section>
+
+    <section>
+      <h2><span>08</span>Fix internet problems</h2>
+      <p>Resets the DNS cache and the network stack.</p>
+      <div class="cmd"><pre>ipconfig /flushdns
+netsh winsock reset
+netsh int ip reset</pre><button class="copy" type="button">Copy</button></div>
+      <p class="note">Restart the PC afterwards.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Jens Gudmand Bach · Every command here is built into Windows 10 and 11.</footer>
+
+  <script>
+    document.querySelectorAll('.copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var text = btn.previousElementSibling.textContent;
+        navigator.clipboard.writeText(text).then(function () {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = 'Copy'; }, 1500);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
